@@ -52,7 +52,6 @@ public class OperatorsTasks {
     private static void taskOperations4() {
         int height = 647;
         int width = 170;
-        int P = height * width;
         int quad = 30;
         int result = (height / quad) * (width / quad);
         System.out.println("В прямоугольник влезет " + result + " квадрата");
@@ -118,9 +117,9 @@ public class OperatorsTasks {
         double a = 12;
         double b = -7;
         double c = 0;
-        double i1 = (a > 0) ? Math.pow(a, 2) : Math.pow(a, 3);
-        double i2 = (b > 0) ? Math.pow(b, 2) : Math.pow(b, 3);
-        double i3 = (c > 0) ? Math.pow(c, 2) : Math.pow(c, 3);
+        double i1 = (a > 0) ? Math.pow(a, 2) : (a == 0) ? a : Math.pow(a, 3);
+        double i2 = (b > 0) ? Math.pow(b, 2) : (b == 0) ? b : Math.pow(b, 3);
+        double i3 = (c > 0) ? Math.pow(c, 2) : (c == 0) ? c : Math.pow(c, 3);
         System.out.println("a = " + i1 + " b = " + i2 + " c = " + i3);
     }
 
