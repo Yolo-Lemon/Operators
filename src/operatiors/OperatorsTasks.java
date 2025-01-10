@@ -53,11 +53,9 @@ public class OperatorsTasks {
         int height = 647;
         int width = 170;
         int P = height * width;
-        int quadP = 30 * 30;
-        int result = P / quadP;
-        int result2 = (height / 30) * (width / 30);
+        int quad = 30;
+        int result = (height / quad) * (width / quad);
         System.out.println("В прямоугольник влезет " + result + " квадрата");
-        System.out.println("В прямоугольник влезет " + result2 + " квадрата");
     }
 
     //Дано целое четырехзначное число. Используя операции div (деление) и mod (остаток от деления), найти сумму его цифр.
